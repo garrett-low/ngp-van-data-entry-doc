@@ -54,7 +54,7 @@ def extract_data(
         r"(?P<code>\d+-\d+)\s*(?P<turf>Turf \d+)\s*\d+\s*(?P<num_doors>\d+)"
     )
     pr = re.compile(
-        r"^Turf Packet Summary.*?([^_\s]*_+[^_]*_+([^_]*?)(City|C|Village|villiage|Vge|V|Town|T])?_+(\d+).*)",
+        r"^Turf Packet Summary.*?([^_\s]*_+[^_]*_+([^_]*?)(City|C|Village|villiage|Vge|V|Town|T])?_+(\d+[a-z]{0,1}).*)",
         re.IGNORECASE,
     )
     dr = re.compile(r".*(Village|Villiage|Vge|City|Town).*", re.IGNORECASE)
